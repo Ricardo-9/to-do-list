@@ -1,0 +1,13 @@
+/* website styles >>>*/
+
+
+/* This class is responsible for styling the new tasks area and hides the modal. >>>*/
+.newTaskArea {
+    display: none;
+}
+
+/* class responsible for displaying the modal. >>>*/
+.newTaskArea.activeNewTaskArea {
+    display: block;
+}
+

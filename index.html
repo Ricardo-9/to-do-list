@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/toDoListIconWhite.png" type="image/x-icon" />
+    <link rel="Stylesheet" href="css/style.css">
+    <title>ToDo List</title>
+
+</head>
+<body>
+
+    <header>
+
+        <h1>To Do List</h1>
+
+    </header>
+
+    <main>
+
+        <!-- Area displaying user-created tasks in list format. -->
+
+        <section id="taskArea">
+
+            <h2 id="taskListTitle">Tasks</h2>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+
+        <!-- Area displaying notes written by the user (related to the selected task). -->
+
+        <section id="notesArea">
+
+            <h3 id="notesAreaTitle">Notes:</h3>
+
+            <textarea id="notesAreaText" readonly ></textarea>
+
+        </section>
+
+
+        <!-- The button responsible for displaying the modal for adding a new task using the Javascript function 'openModal'. -->
+
+        <section  id="addButton">
+
+            <button type="button" id="openModalButton">Add Other Task</button>
+
+        </section>
+
+
+        <!-- The modal section responsible for adding new tasks to the list allows you to describe the title and insert notes for the task. -->
+
+        <section class="newTaskArea" id="newTaskArea">
+
+            <div>
+
+                <form method="post" id="formNewTask">
+
+                    <fieldset>
+
+                        <legend>Add New Task</legend>
+
+                        <label for="titleOfTask" >Title of task</label>
+                        <input type="text" id="titleOfTask" name="titleOfTask" required>
+
+                        <textarea name="notes" id="notes" required></textarea>
+
+                        <button type="button" id="saveButton">Save</button>
+
+                        <button type="button" id="deleteButton">Delete</button>
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
